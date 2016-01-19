@@ -48,8 +48,6 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.allow.mock.location=1 \
     ro.debuggable=1
 
- -# Disable scissor optimisation - helps with scrolling performance		 +    ro.debuggable=1
- -ADDITIONAL_DEFAULT_PROPERTIES += ro.hwui.disable_scissor_opt=true		
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
