@@ -69,4 +69,3 @@ BOARD_SEPOLICY_DIRS += \
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
-MALLOC_IMPL := dlmalloc
