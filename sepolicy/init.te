@@ -1,4 +1,3 @@
-allow init firmware_file:dir mounton;
 allow init self:capability sys_module;
 allow init self:process execmem;
 allow init kernel:system module_request;
