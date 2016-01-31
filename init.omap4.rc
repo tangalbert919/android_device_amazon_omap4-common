@@ -18,7 +18,7 @@ on fs
     insmod /system/lib/modules/pvrsrvkm_sgx544_112.ko
     insmod /system/lib/modules/omaplfb_sgx540_120.ko		
     insmod /system/lib/modules/omaplfb_sgx544_112.ko    
-    
+    start pvrsrvinit
 
     # change permissions for ION driver
     chmod 0777 /dev/ion
@@ -53,7 +53,13 @@ on boot
     mkdir /data/misc/dhcp 0770 dhcp dhcp
     chown dhcp dhcp /data/misc/dhcp
 
-
+service pvrsrvinit /system/bin/pvrsrvinit		
+    class core		
+    user root		
+    group root		
+    oneshot		
+    disabled
+ 
 ###################################################
 # MSHIELD SMC Daemon - component required to store persistent data coming
 #   from the SMC PA to the device persistent storage
