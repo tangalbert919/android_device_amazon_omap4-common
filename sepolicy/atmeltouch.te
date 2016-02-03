@@ -1,16 +1,10 @@
 # atmeltouch
 type atmeltouch, domain;
 type atmeltouch_exec, exec_type, file_type;
-type atmeltouch_file, file_type;
-
-init_daemon_domain(atmeltouch)
 
 allow atmeltouch sensors_device:chr_file rw_file_perms;
 allow atmeltouch input_device:dir r_dir_perms;
 allow atmeltouch input_device:chr_file r_file_perms;
-allow atmeltouch system_data_file:dir create_dir_perms;
-allow atmeltouch atmeltouch_file:dir create_dir_perms;
-allow atmeltouch atmeltouch_file:file create_file_perms;
 allow atmeltouch atmeltouch_exec:file rx_file_perms;
 allow atmeltouch self:process execmem;
 
@@ -26,6 +20,7 @@ allow atmeltouch self:capability sys_module;
 allow atmeltouch self:capability { setuid setgid };
 allow atmeltouch self:capability sys_admin;
 allow atmeltouch shell_exec:file rx_file_perms;;
+
 init_daemon_domain(atmeltouch)
 
-permissive_or_unconfined(atmeltouch)
+# permissive_or_unconfirmed(atmeltouch)
