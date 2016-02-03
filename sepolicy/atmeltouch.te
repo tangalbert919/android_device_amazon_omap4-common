@@ -21,3 +21,11 @@ allow atmeltouch shell_exec:file rx_file_perms;
 allow atmeltouch system_file:file {rx_file_perms execmod};
 allow atmeltouch sysfs_devices_system_cpu:file rw_file_perms;
 allow atmeltouch sysfs:file rw_file_perms;
+
+allow atmeltouch self:capability sys_module;
+allow atmeltouch self:capability { setuid setgid };
+allow atmeltouch self:capability sys_admin;
+allow atmeltouch shell_exec:file rx_file_perms;;
+init_daemon_domain(atmeltouch)
+
+permissive_or_unconfined(atmeltouch)
