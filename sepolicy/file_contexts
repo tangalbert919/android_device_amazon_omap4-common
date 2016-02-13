@@ -42,8 +42,8 @@
 # System binaries
 /system/bin/fix-mac.sh                   u:object_r:fixmac_exec:s0
 /system/bin/smc_pa_ctrl                  u:object_r:smc_pa_exec:s0
-# /system/bin/pvrsrvinit                   u:object_r:pvrsrvinit_exec:s0
-/system/vendor/bin/pvrsrvinit            u:object_r:pvrsrvinit_exec:s0
+/system/bin/pvrsrvinit                   u:object_r:pvrsrvinit_exec:s0
+#/system/vendor/bin/pvrsrvinit            u:object_r:pvrsrvinit_exec:s0
 /system/vendor/bin/pvrsrvinit_SGX540_120 u:object_r:pvrsrvinit_exec:s0
 
 # Firmwares
