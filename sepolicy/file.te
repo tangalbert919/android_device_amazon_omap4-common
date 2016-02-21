@@ -7,5 +7,3 @@ type firmware_ducati, file_type;
 # Default type for anything under /firmware
 type firmware_file, fs_type, contextmount_type;
 
-# hardware tunables
-type sysfs_hardware, fs_type, sysfs_type;
