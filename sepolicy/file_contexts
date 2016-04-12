@@ -57,4 +57,4 @@
 # atmel_touch.sh
 /system/bin/atmel_touch\.sh              u:object_r:atmeltouch_exec:s0
 
-/vendor/bin/camera_dcc\.sh              u:object_r:camera_dcc_exec:s0
+/system/vendor/bin/camera_dcc\.sh              u:object_r:camera_dcc_exec:s0
