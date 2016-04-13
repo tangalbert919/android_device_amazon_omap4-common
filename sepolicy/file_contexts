@@ -1,3 +1,5 @@
+/data(/.*)?           u:object_r:cameradcc_file:s0
+
 #rild
 /data/radio/nv_data.bin.*                u:object_r:radio_data_file:s0
 /dev/ttyGS0                              u:object_r:radio_device:s0
