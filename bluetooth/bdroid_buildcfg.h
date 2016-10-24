@@ -19,4 +19,6 @@
 
 #define BTM_DEF_LOCAL_NAME   "Kindle Fire"
 
+#define KERNEL_MISSING_CLOCK_BOOTTIME_ALARM TRUE
+
 #endif
