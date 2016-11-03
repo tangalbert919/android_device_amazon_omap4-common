@@ -74,3 +74,5 @@ BOARD_SEPOLICY_DIRS += \
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
+TARGET_FORCE_SCREENSHOT_CPU_PATH := true
+
