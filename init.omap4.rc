@@ -13,9 +13,6 @@ on fs
     # LZ4 & 2 compression streams now
     write /proc/sys/vm/swappiness 100
 
-    # pvr module
-    start pvrsrvinit
-
     # change permissions for ION driver
     chmod 0777 /dev/ion
 
