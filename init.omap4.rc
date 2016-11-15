@@ -13,6 +13,13 @@ on fs
     # LZ4 & 2 compression streams now
     write /proc/sys/vm/swappiness 100
 
+    # pvr module
+    insmod /system/lib/modules/pvrsrvkm_sgx540_120.ko
+    insmod /system/lib/modules/pvrsrvkm_sgx544_112.ko
+    insmod /system/lib/modules/omaplfb_sgx540_120.ko		
+    insmod /system/lib/modules/omaplfb_sgx544_112.ko    
+    start pvrsrvinit
+
     # change permissions for ION driver
     chmod 0777 /dev/ion
 
