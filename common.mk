@@ -1,4 +1,5 @@
 # Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -56,36 +57,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_FOLDER)/prebuilt/etc/media_profiles.xml:/system/etc/media_profiles.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
-
-# Low-RAM optimizations
-ADDITIONAL_BUILD_PROPERTIES += \
-    ro.config.low_ram=true \
-    persist.sys.force_highendgfx=true \
-    dalvik.vm.jit.codecachesize=0 \
-    config.disable_atlas=true \
-    ro.config.max_starting_bg=8 \
-    ro.sys.fw.bg_apps_limit=16
-
-# Device settings
-ADDITIONAL_BUILD_PROPERTIES += \
-    wifi.interface=wlan0 \
-    wifi.supplicant_scan_interval=120 \
-    ro.opengles.version=131072 \
-    com.ti.omap_enhancement=true \
-    omap.enhancement=true \
-    ro.crypto.state=unencrypted \
-    persist.lab126.chargeprotect=1 \
-    persist.sys.usb.config=mtp,adb \
-    persist.sys.root_access=3 \
-    ro.bq.gpu_to_cpu_unsupported=1 \
-    media.stagefright.cache-params=18432/20480/15 \
-    ro.ksm.default=1 \
-    camera2.portability.force_api=1
-
-# Deeper Sleep / Better Battery Life
-ADDITIONAL_BUILD_PROPERTIES += \
-    ro.ril.disable.power.collapse=1 \
-    pm.sleep_mode=1
 
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
 
