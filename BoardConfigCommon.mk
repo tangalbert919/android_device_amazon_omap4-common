@@ -41,12 +41,6 @@ BOARD_EGL_WORKAROUND_BUG_10194508 := true
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_VOLD_MAX_PARTITIONS := 32
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
-
-# adb has root
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.secure=0 \
-    ro.allow.mock.location=1 \
-    ro.debuggable=1
     
 # Not quite ready for Toybox
 WITH_BUSYBOX_LINKS := true    
