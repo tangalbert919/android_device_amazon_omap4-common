@@ -10,7 +10,7 @@
   {
     "repository": "android_hardware_ti_omap4",
     "target_path": "hardware/ti/omap4"
-  }
+  },
   {
     "repository": "proprietary_vendor_ti",
     "target_path": "vendor/ti"
